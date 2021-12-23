@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chris Orlassino</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper" style="padding-top:5em;">
+					<!-- Hero -->
+						<section id="hero" class="container">
+							<header>
+								<h2><a href="index.html#">Chris Orlassino</a></h2>
+							</header>
+							<p>
+								A computer engineer passionate in machine learning, game development, and problem solving. 
+							</p>
+						</section>
+				</div>
+
+			<!-- Features 1 -->
+				<div class="wrapper" style="padding-bottom: 10em; padding-left: 14em;">
+					
+					<div>
+						<header style="margin-top:-3em; ">
+							<h2><strong>Sentiment Analysis of Product Reviews</strong></h2>
+						</header>
+					</div>
+
+
+					<ul>
+						<li>A software system which classifies and visualizes sentiment on the many aspects of cameras, extracted from Amazon reviews</li>
+						<li>For example, the user can discover the general opinion on the aspect of "shipping" or "picture quality" using the system</li>
+						<li>The system also provides a way for developers to tag the flaws of their modeling, allowing for more accurate aspect-tagging</li>
+						<li>The project took 10 months to complete, with three students working on it for senior design</li>
+
+						<li>The project report is linked here: <a href="https://docs.google.com/document/d/1gr4X5Ebdw1td0IEEkyfskkF6gWM7p7Y8vC6seVD2mc4/edit">project report</a></li>
+						
+						<li>Briefly, there are three layers: the preprocessing layer, the analysis layer, and the visualization layer:</li>
+						<img src="images/3pic1.png" style="width:55%;height:60%;"> </img>
+						<li>The preprocessing layer handles retrieving and manipulating the data to be as palatable as possible for sentiment analysis</li>
+						<li>This involves web scraping, sentence splitting, clause splitting, and extracting unique phrases via NLP techniques which observe syntactic relationships between words:</li>
+						<img src="images/3pic2.png" style="width:55%;height:60%;"> </img>
+						<li>The analysis layer performs sentiment analysis and aspect-tagging, thereby assigning a polarity to a text as well as categorizing the aspects of a phrase</li>
+						<li>Our sentiment analysis takes a hybrid approach: a combination of supervised learning and rule-based learning</li>
+						<li>There are two layers of aspect-tagging: super-categorization and sub-categorization. Phrases are discarded based on confidence thresholds of either categorization:</li>
+						<img src="images/3pic3.png" style="width:55%;height:60%;"> </img>
+						<li>The visualization layer is the GUI which visualizes various statistics about the model</li>
+						<li>This layer also allows developers to manually tag any false outputs, to assess the accuracy of the system</li>
+						<img src="images/thumb4.png" style="width:55%;height:60%;"> </img>
+						<li>Our model concluded 93% sentiment analysis accuracy and 96% aspect tagging accuracy</li>
+						
+							
+						
+					</ul>
+
+
+
+					<ul class="actions">
+						<li><a href="index.html" class="button">Back</a></li>
+					</ul>
+
+				</div>
+				
+			
+
+			
+
+			<!-- Footer -->
+				<div id="footer-wrapper" style="padding-top: 3em; padding-bottom: 1em;">
+					<div id="footer" class="container">
+						<p style="text-align:Center">Contact <a href="mailto:christopher.orlassino@live.com">christopher.orlassino@live.com</a> for any inquiries</p>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

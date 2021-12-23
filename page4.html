@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chris Orlassino</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper" style="padding-top:5em;">
+					<!-- Hero -->
+						<section id="hero" class="container">
+							<header>
+								<h2><a href="index.html#">Chris Orlassino</a></h2>
+							</header>
+							<p>
+								A computer engineer passionate in machine learning, game development, and problem solving. 
+							</p>
+						</section>
+				</div>
+
+			<!-- Features 1 -->
+				<div class="wrapper" style="padding-bottom: 10em; padding-left: 14em;">
+					
+					<div>
+						<header style="margin-top:-3em; ">
+							<h2><strong>Predicting Partisanship from Twitter</strong></h2>
+						</header>
+					</div>
+
+
+					<ul>
+						<li>A Python-based project which attempts to classify a congressperson's political ideology based on features extracted from Twitter</li>
+						<li>This project was completed solely by Chris Orlassino in two months</li>
+						<li>The project report is linked here: <a href="https://drive.google.com/file/d/1udL18VAJNYE7C7SIX-A7fLnRspFBOfC9/view">project report</a></li>
+						<li>Briefly, there are four labels for classification: far left, center left, center right, far right</li>
+						<li>These quadrants are derived by analyzing DW-NOMINATE, which is a generally-accepted metric of partisanship used by political scientists:</li>
+						<img src="images/4pic1.png" style="width:55%;height:60%;"> </img>
+						<li>The Python libraries Scrapy and Selenium were used to scrape a list of each congressperson and their Twitter account</li>
+						<li>The Twitter dev API was used to extract features from their Twitter accounts</li>
+						<li>The first feature set relies on the users which the congressperson follows: the 50 most common overall are the feature set:</li>
+						<img src="images/4pic2.png" style="width:55%;height:60%;"> </img>
+						<li>A Bernoulli naive Bayes classifier rendered a 65% accuracy, and 93% accuracy when only classifying left/right</li>
+						<li>The second feature set relies on sentiment analysis of certain keywords</li>
+						<li>Due to API limits, only two keywords could be observed. They were chosen to be "Trump" and "Biden":</li>
+						<img src="images/thumb5.png" style="width:55%;height:60%;"> </img>
+						<li>A multinomial naive Bayes classifier rendered a 62% accuracy, and 95% accuracy when only classifying left/right</li>
+						<img src="images/4pic3.png" style="width:55%;height:60%;"> </img>
+						<li>62% is good accuracy for only having two features; good proof of concept</li>
+						<li>With higher API access, more keywords could be analyzed to split homogenous clusters as shown above</li>
+							
+						
+					</ul>
+
+
+
+					<ul class="actions">
+						<li><a href="index.html" class="button">Back</a></li>
+					</ul>
+
+				</div>
+				
+			
+
+			
+
+			<!-- Footer -->
+				<div id="footer-wrapper" style="padding-top: 3em; padding-bottom: 1em;">
+					<div id="footer" class="container">
+						<p style="text-align:Center">Contact <a href="mailto:christopher.orlassino@live.com">christopher.orlassino@live.com</a> for any inquiries</p>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
